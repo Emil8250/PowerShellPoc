@@ -1,0 +1,12 @@
+﻿@model List<System.Management.Automation.PSObject>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+     @foreach (var output in Model)
+     {
+         @output
+         <br/>
+     }
+</div>
